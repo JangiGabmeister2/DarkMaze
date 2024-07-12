@@ -11790,44 +11790,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1581975878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1976825296163726501, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
-  m_PrefabInstance: {fileID: 1976825296930958819}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1581975885
+--- !u!114 &1347200629 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5605631143101106591, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+  m_PrefabInstance: {fileID: 1835671572}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581975878}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cbd5b12f3d1c02408956f3abade3bc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 69b67e7bddf139445862011b8c4635d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorCollide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 101039308}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadNextScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  SpikesCollide:
-    m_PersistentCalls:
-      m_Calls: []
-  PlayerCollide:
-    m_PersistentCalls:
-      m_Calls: []
+--- !u!1001 &1835671572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8190539
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05887578
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.0072827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605631143101106590, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+      propertyPath: m_Name
+      value: Sound Master
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
 --- !u!1 &2081092216
 GameObject:
   m_ObjectHideFlags: 0
@@ -11986,8 +12016,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: SpikesCollide.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 101039308}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1347200629}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: SpikesCollide.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1976825296930958820}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: SpikesCollide.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1976825296930958820}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlaySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: SoundMaster, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: c8ff974967bf7d649becfd87c12c15b0, type: 3}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572053557374974765, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: DoorCollide.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+--- !u!82 &1976825296930958820 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5286720523217617280, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+  m_PrefabInstance: {fileID: 1976825296930958819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3459243421547093401
 PrefabInstance:
   m_ObjectHideFlags: 0

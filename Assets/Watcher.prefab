@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Watcher
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 44b2e3d446da0aa4c8bd0d9f56cb99f1, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

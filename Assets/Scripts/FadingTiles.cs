@@ -32,6 +32,11 @@ public class FadingTiles : MonoBehaviour
         StartCoroutine(nameof(TilemapBegone));
     }
 
+    public void ComeBack()
+    {
+        StartCoroutine(nameof(TilemapComeBack));
+    }
+
     private IEnumerator TilemapBegone()
     {
         for (int i = 0; i < _tilemapColors.Length; i++)
@@ -39,6 +44,20 @@ public class FadingTiles : MonoBehaviour
             while (_tilemapColors[i].a > 0)
             {
                 _tilemapColors[i].a -= Time.deltaTime;
+
+            }
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator TilemapComeBack()
+    {
+        for (int i = 0; i < _tilemapColors.Length; i++)
+        {
+            while (_tilemapColors[i].a < 255)
+            {
+                _tilemapColors[i].a += Time.deltaTime;
 
             }
 
