@@ -23,6 +23,11 @@ public class SoundMaster : MonoBehaviour
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
+    private void Start()
+    {
+        PlayMusic("Theme");
+    }
+
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, s => s.name == name);
