@@ -29,7 +29,12 @@ public class PlayerCollides : MonoBehaviour
             if (collision.gameObject.CompareTag("Spikes"))
             {
                 SoundMaster.Instance.PlaySFX("Spike");
-            } 
+            }
+
+            if (collision.gameObject.CompareTag("Plate"))
+            {
+                SoundMaster.Instance.PlaySFX("Plate");
+            }
         }
     }
 }

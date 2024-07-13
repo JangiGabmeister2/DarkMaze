@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1976825296163726506, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: _walking
+      value: 
+      objectReference: {fileID: 7023182010769174312}
     - target: {fileID: 1976825296163726507, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -840,6 +844,11 @@ MonoBehaviour:
 --- !u!4 &3223566913005802910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5605631143101106588, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
+  m_PrefabInstance: {fileID: 7023182010839555074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7023182010769174312 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 97399594, guid: 820deceae4f468a46bbfd17d2f7a0ffc, type: 3}
   m_PrefabInstance: {fileID: 7023182010839555074}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7349804826675708362

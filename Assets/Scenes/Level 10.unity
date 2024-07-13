@@ -12984,7 +12984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976825296163726507, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: -4.95
       objectReference: {fileID: 0}
     - target: {fileID: 1976825296163726507, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13693,7 +13693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13717,7 +13717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadScene
+      value: LoadNextScene
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

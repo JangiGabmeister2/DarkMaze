@@ -11,6 +11,19 @@ public class GameManager : MonoBehaviour
         _currentScene = SceneManager.GetActiveScene();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadScene("Doors");
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadScene();
+        }
+    }
+
     public void ReloadScene()
     {
         StartCoroutine("ReloadSceneWait");

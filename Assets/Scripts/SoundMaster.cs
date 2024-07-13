@@ -25,8 +25,11 @@ public class SoundMaster : MonoBehaviour
 
     private void Start()
     {
+        musicSource.mute = false;
+        sfxSource.mute = false;
+
         PlayMusic("Theme");
-    } 
+    }
 
     public void PlayMusic(string name)
     {
@@ -74,6 +77,36 @@ public class SoundMaster : MonoBehaviour
         {
             return null;
         }
+    }
+
+    public void ToggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    public void ToggleSFX()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
+    public void MuteMusic(bool b)
+    {
+        musicSource.mute = b;
+    }
+
+    public void MuteSFX(bool b)
+    {
+        sfxSource.mute = b;
+    }
+
+    public void MusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    public void SFXVolume(float volume)
+    {
+        sfxSource.volume = volume;
     }
 
 }
