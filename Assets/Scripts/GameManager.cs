@@ -15,12 +15,17 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadScene("Doors");
+            LoadSceneNow("Doors");
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            ReloadScene();
+            ReloadSceneNow();
+        }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            LoadSceneNow("End");
         }
     }
 
@@ -37,6 +42,21 @@ public class GameManager : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         StartCoroutine(LoadSceneWait(sceneName));
+    }
+
+    public void ReloadSceneNow()
+    {
+        SceneManager.LoadScene(_currentScene.buildIndex);
+    }
+
+    public void LoadNextSceneNow()
+    {
+        SceneManager.LoadScene(_currentScene.buildIndex + 1);
+    }
+
+    public void LoadSceneNow(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
