@@ -46,7 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b67e7bddf139445862011b8c4635d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: b7a191d3404c36049aa18483972ef8b2, type: 3}
+  - name: Theme 2
+    clip: {fileID: 8300000, guid: afbdff108beb8774cb3a27746e7f07dc, type: 3}
   sfxSounds:
   - name: Door
     clip: {fileID: 8300000, guid: c8ff974967bf7d649becfd87c12c15b0, type: 3}
@@ -100,7 +104,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

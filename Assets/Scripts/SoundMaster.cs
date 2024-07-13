@@ -26,7 +26,7 @@ public class SoundMaster : MonoBehaviour
     private void Start()
     {
         PlayMusic("Theme");
-    }
+    } 
 
     public void PlayMusic(string name)
     {

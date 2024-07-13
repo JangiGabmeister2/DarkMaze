@@ -146,13 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbd5b12f3d1c02408956f3abade3bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorCollide:
-    m_PersistentCalls:
-      m_Calls: []
-  SpikesCollide:
-    m_PersistentCalls:
-      m_Calls: []
-  PlayerCollide:
+  objectTag: Player
+  OnCollision:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8847685520498847197}

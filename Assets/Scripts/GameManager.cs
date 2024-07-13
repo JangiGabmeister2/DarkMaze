@@ -11,27 +11,48 @@ public class GameManager : MonoBehaviour
         _currentScene = SceneManager.GetActiveScene();
     }
 
-    public void ReloadScene(float waitTime)
+    public void ReloadScene()
     {
-        StartCoroutine(ReloadSceneWait(waitTime));
+        StartCoroutine("ReloadSceneWait");
     }
 
-    public void LoadNextScene(float waitTime)
+    public void LoadNextScene()
     {
-        StartCoroutine(LoadNextSceneWait(waitTime));
+        StartCoroutine("LoadNextSceneWait");
     }
 
-    private IEnumerator ReloadSceneWait(float waitTime)
+    public void LoadScene(string sceneName)
     {
-        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(LoadSceneWait(sceneName));
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
+    private IEnumerator ReloadSceneWait()
+    {
+        yield return new WaitForSeconds(2);
 
         SceneManager.LoadScene(_currentScene.buildIndex);
     }
 
-    private IEnumerator LoadNextSceneWait(float waitTime)
+    private IEnumerator LoadNextSceneWait()
     {
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(2);
 
         SceneManager.LoadScene(_currentScene.buildIndex + 1);
+    }
+
+    private IEnumerator LoadSceneWait(string name)
+    {
+        yield return new WaitForSeconds(2);
+
+        SceneManager.LoadScene(name);
     }
 }
