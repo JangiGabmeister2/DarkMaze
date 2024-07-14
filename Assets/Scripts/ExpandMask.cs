@@ -6,7 +6,17 @@ public class ExpandMask : MonoBehaviour
     [SerializeField] private Transform _spriteMask;
     [SerializeField] private float _minScale = 5f, _maxScale = 100f;
 
-    private Vector3 _speed = new Vector3(100, 100, 100);
+    [SerializeField] private bool _enableStart = true;
+
+    private Vector3 _speed = new Vector3(50, 50, 50);
+
+    private void Start()
+    {
+        if (_enableStart)
+        {
+            _spriteMask.localScale = new Vector3(_minScale, _minScale); 
+        }
+    }
 
     public void BegoneTilemap()
     {
@@ -16,6 +26,11 @@ public class ExpandMask : MonoBehaviour
     public void ComeBackTilemap()
     {
         StartCoroutine(nameof(Shrink));
+    }
+
+    public void IncreaseMaskSize(float increment)
+    {
+        _spriteMask.localScale += new Vector3(increment, increment);
     }
 
     private IEnumerator Expand()

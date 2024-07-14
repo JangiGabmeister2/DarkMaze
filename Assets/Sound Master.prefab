@@ -54,7 +54,7 @@ MonoBehaviour:
   sfxSounds:
   - name: Door
     clip: {fileID: 8300000, guid: c8ff974967bf7d649becfd87c12c15b0, type: 3}
-  - name: Spike
+  - name: Spikes
     clip: {fileID: 8300000, guid: 75546d3a200ed1b439f46f18437efe80, type: 3}
   - name: Key
     clip: {fileID: 8300000, guid: 8c797f4b088ec434b88b50342bec8d7a, type: 3}
@@ -62,6 +62,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 010bbb7763e1dcc46af7bfba4e38f1a1, type: 3}
   - name: Steps
     clip: {fileID: 8300000, guid: aab28023f3ef784429f3d258fc26c6a9, type: 3}
+  - name: Torch
+    clip: {fileID: 8300000, guid: 092b02073c54e1943b3924b3197360d8, type: 3}
   musicSource: {fileID: 5605631143290648407}
   sfxSource: {fileID: 5605631144375233562}
 --- !u!1 &5605631143290648409
