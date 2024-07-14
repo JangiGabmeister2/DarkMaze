@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Profiling;
 
 public class PlayerCollides : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class PlayerCollides : MonoBehaviour
             if (collision.gameObject.CompareTag("Spikes"))
             {
                 SoundMaster.Instance.PlaySFX("Spike");
+
+                GameRecorder.Instance.AddDeath();
             }
 
             if (collision.gameObject.CompareTag("Plate"))
