@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     private Scene _currentScene;
 
+    [SerializeField] private bool _shortcut = false;
+
     private void Start()
     {
         _currentScene = SceneManager.GetActiveScene();
@@ -23,7 +25,7 @@ public class GameManager : MonoBehaviour
             ReloadSceneNow();
         }
 
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.V) && _shortcut)
         {
             LoadSceneNow("End");
         }
