@@ -197,7 +197,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6813,7 +6813,7 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
-  m_MaskInteraction: 2
+  m_MaskInteraction: 1
 --- !u!1839735485 &367356550
 Tilemap:
   m_ObjectHideFlags: 0
@@ -7977,6 +7977,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93755e4fd6c67445b7d3e38b9529329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &411497872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 431835287, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+  m_PrefabInstance: {fileID: 4867486824122346289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1655737095
 GameObject:
   m_ObjectHideFlags: 0
@@ -8237,7 +8242,7 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
-  m_MaskInteraction: 2
+  m_MaskInteraction: 1
 --- !u!1839735485 &1655737101
 Tilemap:
   m_ObjectHideFlags: 0
@@ -9458,6 +9463,58 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!212 &2125514230
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411497872}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 2463af2dab320ad4bb62f0cb42d37e72, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &107769975672492807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9495,7 +9552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ComeBackTilemap
+      value: BegoneTilemap
       objectReference: {fileID: 0}
     - target: {fileID: 1552409896223977321, guid: 019ad46781728574396027bdcc7e77fa, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -9654,6 +9711,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 431835288, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 64d878c1eda24714d90ba4047f25fa2a, type: 3}
+    - target: {fileID: 431835288, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_MaskAlphaCutoff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431835288, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_BackSortingOrder
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 431835288, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_FrontSortingOrder
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 431835288, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_IsCustomRangeActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431835289, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 431835289, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1581975884, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: m_Interpolate
       value: 1
@@ -9756,7 +9841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4510795709190072209, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: ComeBackTilemap
+      value: BegoneTilemap
       objectReference: {fileID: 0}
     - target: {fileID: 4510795709190072209, guid: b930447f3befea54ebae3067b26c4e9f, type: 3}
       propertyPath: OnCollision.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
@@ -10352,7 +10437,7 @@ PrefabInstance:
       objectReference: {fileID: 6405193271167147690}
     - target: {fileID: 9009808439179370085, guid: 682745b35ff968444ac2d43a6017f352, type: 3}
       propertyPath: PlayerMoved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BegoneTilemap
+      value: ComeBackTilemap
       objectReference: {fileID: 0}
     - target: {fileID: 9009808439179370085, guid: 682745b35ff968444ac2d43a6017f352, type: 3}
       propertyPath: PlayerMoved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
