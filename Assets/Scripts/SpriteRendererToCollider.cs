@@ -1,13 +1,11 @@
 using UnityEngine;
-using NaughtyAttributes;
 
 public class SpriteRendererToCollider : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer _lock;
     [SerializeField] private bool _hasLock = true;
-    [SerializeField][ShowIf("_hasLock")] private bool _isLocked = true;
 
     private SpriteRenderer _sprite;
-    private SpriteRenderer _lock;
     private BoxCollider2D _boxCollider;
 
     private void Start()
@@ -17,10 +15,9 @@ public class SpriteRendererToCollider : MonoBehaviour
 
         _boxCollider.size = _sprite.size;
 
-        if (_hasLock)
+        if (!_hasLock)
         {
-            _lock = GetComponentInChildren<SpriteRenderer>();
-            _lock.enabled = _isLocked;
+            _lock.enabled = false;
         }
     }
 }

@@ -16,24 +16,14 @@ public class PlayerCollides : MonoBehaviour
 
         if (CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Key"))
-            {
-                SoundMaster.Instance.PlaySFX("Key");
-            }
+            string[] tagName = new string[] { "Key", "Door", "Spikes", "Plate" };
 
-            if (collision.gameObject.CompareTag("Door"))
+            for (int i = 0; i < tagName.Length; i++)
             {
-                SoundMaster.Instance.PlaySFX("Door");
-            }
-
-            if (collision.gameObject.CompareTag("Spikes"))
-            {
-                SoundMaster.Instance.PlaySFX("Spike");
-            }
-
-            if (collision.gameObject.CompareTag("Plate"))
-            {
-                SoundMaster.Instance.PlaySFX("Plate");
+                if (collision.gameObject.CompareTag(tagName[i]))
+                {
+                    SoundMaster.Instance.PlaySFX(tagName[i]);
+                }
             }
         }
     }

@@ -29,7 +29,7 @@ public class ExpandMask : MonoBehaviour
 
     private IEnumerator Shrink()
     {
-        while (_spriteMask.localScale.y > .1f)
+        while (_spriteMask.localScale.y > 0f)
         {
             _spriteMask.localScale -= _speed * Time.deltaTime;
 
